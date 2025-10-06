@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lync - Social Media App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <div class="header">
+                <h1>Lync</h1>
+                <div class="search">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+            <div class="feed">
+                <div class="create-post">
+                    <textarea placeholder="What's on your mind?"></textarea>
+                    <button>Post</button>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://via.placeholder.com/40" alt="User Avatar">
+                        <div>
+                            <h4>Jane Smith</h4>
+                            <span>@janesmith</span>
+                            <span>2h ago</span>
+                        </div>
+                    </div>
+                    <p>Just had an amazing day at the beach! 🌊☀️ #SummerVibes</p>
+                    <img src="https://via.placeholder.com/400x200" alt="Post Image">
+                    <div class="post-actions">
+                        <button class="like-btn">Like</button>
+                        <button>Comment</button>
+                        <button>Share</button>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://via.placeholder.com/40" alt="User Avatar">
+                        <div>
+                            <h4>Bob Johnson</h4>
+                            <span>@bobjohnson</span>
+                            <span>4h ago</span>
+                        </div>
+                    </div>
+                    <p>Excited to announce my new project! Check it out: [link]</p>
+                    <div class="post-actions">
+                        <button class="like-btn">Like</button>
+                        <button>Comment</button>
+                        <button>Share</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Messages Page -->
+        <div id="messages-page" class="page">
+            <div class="header">
+                <h1>Messages</h1>
+            </div>
+            <div class="messages-list">
+                <div class="chat-item">
+                    <img src="https://via.placeholder.com/50" alt="User Avatar">
+                    <div class="chat-info">
+                        <h4>Alice Brown</h4>
+                        <p>Hey, how are you?</p>
+                        <span>5m ago</span>
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <img src="https://via.placeholder.com/50" alt="User Avatar">
+                    <div class="chat-info">
+                        <h4>Charlie Davis</h4>
+                        <p>Let's meet up soon!</p>
+                        <span>1h ago</span>
+                    </div>
+                </div>
+                <div class="chat-item">
+                    <img src="https://via.placeholder.com/50" alt="User Avatar">
+                    <div class="chat-info">
+                        <h4>Eve Wilson</h4>
+                        <p>Thanks for the recommendation!</p>
+                        <span>2h ago</span>
+                    </div>
+                </div>
+            </div>
+            <div class="message-bubbles">
+                <div class="bubble received">Hi there!</div>
+                <div class="bubble sent">Hello! How's it going?</div>
+                <div class="bubble received">Great, thanks! What about you?</div>
+            </div>
+        </div>
+
+        <!-- Profile Page -->
+        <div id="profile-page" class="page">
+            <div class="header">
+                <h1>Profile</h1>
+            </div>
+            <div class="profile-info">
+                <img src="https://via.placeholder.com/100" alt="User Avatar" class="profile-avatar">
+                <h2>John Doe</h2>
+                <p>@johndoe</p>
+                <p class="bio">Loving life and connecting with friends! 🌟</p>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="number">1.2K</span>
+                        <span>Followers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">350</span>
+                        <span>Following</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number">89</span>
+                        <span>Posts</span>
+                    </div>
+                </div>
+            </div>
+            <div class="posts-grid">
+                <img src="https://via.placeholder.com/100" alt="Post">
+                <img src="https://via.placeholder.com/100" alt="Post">
+                <img src="https://via.placeholder.com/100" alt="Post">
+                <img src="https://via.placeholder.com/100" alt="Post">
+                <img src="https://via.placeholder.com/100" alt="Post">
+                <img src="https://via.placeholder.com/100" alt="Post">
+            </div>
+        </div>
+
+        <!-- Fun Page -->
+        <div id="fun-page" class="page">
+            <div class="header">
+                <h1>Fun</h1>
+            </div>
+            <div class="fun-content">
+                <div class="reel">
+                    <video controls>
+                        <source src="https://via.placeholder.com/300x500.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Trending Reel #1</p>
+                </div>
+                <div class="meme">
+                    <img src="https://via.placeholder.com/300x300" alt="Meme">
+                    <p>Funny Meme!</p>
+                </div>
+                <div class="reel">
+                    <video controls>
+                        <source src="https://via.placeholder.com/300x500.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Trending Reel #2</p>
+                </div>
+                <div class="meme">
+                    <img src="https://via.placeholder.com/300x300" alt="Meme">
+                    <p>Another Hilarious Meme!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <button class="nav-btn active" data-page="home">
+                <span class="icon">🏠</span>
+                <span class="label">Home</span>
+            </button>
+            <button class="nav-btn" data-page="messages">
+                <span class="icon">💬</span>
+                <span class="label">Messages</span>
+            </button>
+            <button class="nav-btn" data-page="profile">
+                <span class="icon">👤</span>
+                <span class="label">Profile</span>
+            </button>
+            <button class="nav-btn" data-page="fun">
+                <span class="icon">🎉</span>
+                <span class="label">Fun</span>
+            </button>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
