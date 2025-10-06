@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lync - Social Media App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Home Page -->
+        <div id="home-page" class="page active">
+            <div class="header">
+                <h1>Lync</h1>
+                <div class="header-actions">
+                    <button id="messages-btn" class="icon-btn" aria-label="Messages">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="stories-container">
+                <div class="story add-story">
+                    <div class="story-avatar-wrapper">
+                        <img src="https://via.placeholder.com/100" alt="Your Story">
+                        <div class="plus-icon">+</div>
+                    </div>
+                    <span>Your Story</span>
+                </div>
+                <div class="story">
+                    <div class="story-avatar-wrapper">
+                        <img src="https://via.placeholder.com/60" alt="Jane Smith's Story">
+                    </div>
+                    <span>janesmith</span>
+                </div>
+                <div class="story">
+                    <div class="story-avatar-wrapper">
+                        <img src="https://via.placeholder.com/60" alt="Bob Johnson's Story">
+                    </div>
+                    <span>bobjohnson</span>
+                </div>
+                <!-- Add more story elements here -->
+            </div>
+            <main class="feed">
+                <div class="create-post">
+                    <textarea placeholder="What's on your mind?"></textarea>
+                    <button>Post</button>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://via.placeholder.com/40" alt="User Avatar">
+                        <div>
+                            <h4>Jane Smith</h4>
+                            <span>@janesmith</span>
+                            <span>2h ago</span>
+                        </div>
+                    </div>
+                    <p>Just had an amazing day at the beach! 🌊☀️ #SummerVibes</p>
+                    <img src="https://via.placeholder.com/400x200" alt="Post Image">
+                    <div class="post-actions">
+                        <button class="like-btn" aria-pressed="false">Like</button>
+                        <button>Comment</button>
+                        <button>Share</button>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <img src="https://via.placeholder.com/40" alt="Bob Johnson's Avatar">
+                        <div>
+                            <h4>Bob Johnson</h4>
+                            <span>@bobjohnson</span>
+                            <span>4h ago</span>
+                        </div>
+                    </div>
+                    <p>Excited to announce my new project! Check it out.</p>
+                    <div class="post-actions">
+                        <button class="like-btn" aria-pressed="false">Like</button>
+                        <button>Comment</button>
+                        <button>Share</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-btn active">
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                </span>
+                <span class="label">Home</span>
+            </a>
+            <a href="search.html" class="nav-btn">
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </span>
+                <span class="label">Search</span>
+            </a>
+            <a href="reels.html" class="nav-btn">
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </span>
+                <span class="label">Reels</span>
+            </a>
+            <a href="profile.html" class="nav-btn">
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                </span>
+                <span class="label">Profile</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
